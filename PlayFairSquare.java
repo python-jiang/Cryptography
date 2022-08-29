@@ -14,9 +14,9 @@ public class PlayFairSquare {
 
         char[][] key = square(keyword);
         System.out.println("根据密钥生成5X5矩阵（其中I=J）:");
-        for (char[] chars : key) {
-            for (int j = 0; j < key[0].length; ++j) {
-                System.out.print(chars[j] + " ");
+        for(int i = 0; i < key.length; ++i){
+            for(int j = 0; j < key[0].length; ++j){
+                System.out.print(key[i][j] + " ");
             }
             System.out.println();
         }
